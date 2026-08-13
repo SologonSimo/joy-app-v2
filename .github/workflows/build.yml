@@ -14,7 +14,7 @@ jobs:
           flutter-version: '3.x'
           channel: 'stable'
       - run: flutter flutter create 
-      --platforms=android .
+  --platforms=android .
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
         with:
